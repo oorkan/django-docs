@@ -1,0 +1,21 @@
+{
+  "name": "django-docs",
+  "version": "1.0.0",
+  "description": "NPM task runner for django-docs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hello, World!\"",
+    "env": "env",
+    "scss-compile": "node-sass ../assets/scss/style.scss ../assets/css/style.css --output-style=expanded --source-map=true",
+    "css-autoprefix": "postcss ../assets/css/style.css --use autoprefixer -d ../assets/css",
+    "scss": "nodemon --watch ../assets/scss/ --ext scss --exec \"npm run scss-compile && npm run css-autoprefix\""
+  },
+  "author": "oorkan",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "node-sass": "^4.13.0",
+    "nodemon": "^2.0.2",
+    "postcss-cli": "^6.1.3"
+  }
+}
