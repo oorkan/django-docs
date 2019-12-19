@@ -5,8 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Django Docs | Index</title>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Courier+Prime:400,700&display=swap" rel="stylesheet">  -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <main id="page"></main>
+  <main id="main">
+    <header id="site-header"></header>
+    <section id="page">
+      <aside id="sidebar">
+        <h3>Table of contents</h3>
+      </aside>
+      <div id="page-content">
+        <article class="post">
+          <h2 class="post__title">Preface</h2>
+          <div class="post__thumbnail"></div>
+          <div class="post__content">
+            <h3>Platform</h3>
+            <ul>
+              <li>os: Debian 4.19.67-2+deb10u2 (2019-11-11) x86_64 GNU/Linux</li>
+              <li>browser: Google Chrome 79.0.3945.88 (Official Build) (64-bit)</li>
+            </ul>
+            <h3>Version</h3>
+            <ul>
+              <li>3.0</li>
+            </ul>
+            <h3>Dependencies</h3>
+            <ul>
+              <li>
+                Python: 3.x.y
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="post">
+          <h2 class="post__title">Installation</h2>
+          <div class="post__thumbnail"></div>
+          <div class="post__content">
+            <h3>Python</h3>
+            <p>
+              First, we need to check if we already have the python installed.
+              <code class="codeblock">
+                python3 --version || python --version
+              </code>
+            </p>
+            <p>
+              Django 3 requires python >= 3. If our version is smaller then we need to upgrade it.
+              <code class="codeblock">
+                sudo apt install python3
+              </code>
+              It's also possible that our system will contain two versions of python, e.g. >=2 and >= 3. That's ok.
+            </p>
+            <p>&nbsp;</p>
+            <h3>Installing Django's official release</h3>
+            <p>
+              For this purpose, we'll need to have a package called <mark>pip</mark> installed on our system. Pip is a Python's package manager system and also recursive abbreviation meaning <mark>Pip Installs Packages.</mark>
+              <code class="codeblock">
+                sudo apt install python3-pip
+              </code>
+              After installing pip, we can now continue to installation of Django.
+              <code class="codeblock">
+                python3 -m pip install Django
+              </code>
+              Where the argument <mark>m</mark> stands for mod and is running library module as a script.
+            </p>
+            <p>
+              To verify that the Django is successfully installed we can run the following command:
+              <code class="codeblock">
+                python3 -m django --version
+              </code>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer id="site-footer" class="text-center">
+      © 2019
+    </footer>
+  </main>
 </body>
 </html>

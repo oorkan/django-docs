@@ -1,0 +1,11 @@
+.post {
+  margin-bottom: 4em;
+  
+  &__title {
+    border-bottom: 1px solid currentColor;
+  }
+
+  .codeblock {
+    @include codeblock();
+  }
+}
